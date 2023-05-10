@@ -9,6 +9,9 @@ font-family: 'Palanquin', sans-serif;
 font-family: 'Taviraj', serif;
 */
 
+#root {
+    background-image: radial-gradient(circle, #172554, #17234a, #172140, #171e36, #171c2c);
+}
 
 h1 {
     font-family: 'Montserrat', sans-serif;
