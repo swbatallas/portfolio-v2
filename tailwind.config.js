@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   content: [
     "./index.html",
@@ -15,10 +18,10 @@ export default {
             transform: "translate(0px, 0px )scale(0.8)"
           },
           "33%": {
-            transform: "translate(30px, -50px) scale(0.6)"
+            transform: "translate(30px, 50px) scale(0.6)"
           },
           "66%": {
-            transform: "translate(-20px, 20px) scale(0.7)"
+            transform: "translate(-20px, 70px) scale(0.7)"
           },
           "100%": {
             transform: "translate(0px, 0px) scale(0.8)"
@@ -26,6 +29,10 @@ export default {
         },
 
       }
+    },
+    screens: {
+      'xs': '376px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
