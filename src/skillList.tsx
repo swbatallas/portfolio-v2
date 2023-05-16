@@ -19,7 +19,7 @@ export const skillsList: {
     name: 'React',
     badge:
       'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
-    caracteristicas: ['react hooks y custom hooks', 'react context', 'react router', 'uso de firebase'],
+    caracteristicas: ['hooks y custom hooks', 'react context'],
   },
   {
     name: 'NodeJS',

@@ -93,7 +93,7 @@ export default function Home() {
             alt='avatar-image'
             className='hidden xs:block avatar relative mx-auto w-auto h-full'
             // @ts-ignore
-            variants={fadeIn('left', 0.3)}
+            variants={fadeIn('up', 0.3)}
             initial={{opacity: 0}}
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
