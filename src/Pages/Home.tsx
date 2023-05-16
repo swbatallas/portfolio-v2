@@ -19,7 +19,6 @@ export default function Home() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
-            
             className='uppercase font-bold mt-8 ml-2 leading-[0.8] text-[40px] md:text-[60px] text-slate-300'
           >
             Stewart Batallas
@@ -46,7 +45,7 @@ export default function Home() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
-            className='mx-2 lg:mx-0 text-[16px] sm:-[18px] md:text-[20px] lg:text-[25px]'
+            className='mx-2 text-[16px] sm:-[18px] md:text-[20px] lg:text-[25px]'
           >
             Soy un desarrollador web apasionado por la creación de páginas web y
             apps innovadoras.
@@ -61,13 +60,13 @@ export default function Home() {
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
             id='buttons'
-            className='flex max-w-max gap-x-6 items-center mt-5 md:mt-8 mx-auto lg:mx-0'
+            className='flex max-w-max gap-x-6 items-center mt-5 md:mt-8 mx-auto'
           >
-            <button className='w-[120px] bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full'>
+            <button className='w-[120px] transition-colors bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full hover:bg-indigo-600 duration-500'>
               Contactar
             </button>
             <a href='#'>
-              <button className='w-[120px] bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full'>
+              <button className='w-[120px] transition-colors bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full hover:bg-indigo-600 duration-500'>
                 Portfolio
               </button>
             </a>
@@ -75,10 +74,10 @@ export default function Home() {
               id='social-networks'
               className='flex text-[25px] lg:text-[40px] flex-row items-center mx-auto lg:mx-0 gap-x-6 max-w-max'
             >
-              <a href='#'>
+              <a href='#' className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'>
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href='#' className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'>
                 <FaLinkedin />
               </a>
             </div>
