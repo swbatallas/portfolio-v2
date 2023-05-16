@@ -10,8 +10,12 @@ export default function About() {
   const isInView = useInView(aboutRef)
 
   return (
-    <section ref={aboutRef} id='about' className='text-slate-300'>
-      <div className='container mx-auto'>
+    <section
+      ref={aboutRef}
+      id='about'
+      className='text-slate-300 '
+    >
+      <div className='container mx-auto lg:h-screen flex justify-center items-center'>
         <div>
           <motion.div
             id='text'
@@ -20,7 +24,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
-            className='text-center'
+            className='text-center lg:text-left'
           >
             <h2 className='uppercase font-bold text-[30px] lg:text-[50px]'>
               Sobre mi
@@ -38,7 +42,7 @@ export default function About() {
               initial={{ opacity: 0 }}
               whileInView='show'
               viewport={{ once: false, amount: 0.7 }}
-              className='uppercase font-semibold text-center mt-8 mb-4 text-indigo-500'
+              className='uppercase font-semibold text-center mt-8 mb-4 text-indigo-500 md:text-[18px] lg:text-[25px]'
             >
               mern stack
             </motion.h3>
