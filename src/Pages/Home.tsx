@@ -7,8 +7,8 @@ import Shapes from '../Components/Shapes'
 
 export default function Home() {
   return (
-    <section id='home w-full min-h-[100%] flex items-center'>
-      <div className='container mx-auto  text-slate-100 flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-x-12'>
+    <section id='home' className='w-full h-screen lg:flex justify-center'>
+      <div className='container mx-auto text-slate-100 flex flex-col gap-y-8 lg:flex-row lg:items-center lg:justify-center lg:gap-x-12'>
         <div
           id='text'
           className='flex-1 text-center lg:text-left items-center justify-center order-2 lg:order-1 lg:min-w-[50%]'
@@ -19,6 +19,7 @@ export default function Home() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
+            
             className='uppercase font-bold mt-8 ml-2 leading-[0.8] text-[40px] md:text-[60px] text-slate-300'
           >
             Stewart Batallas
@@ -94,7 +95,7 @@ export default function Home() {
             className='hidden xs:block avatar relative mx-auto w-auto h-full'
             // @ts-ignore
             variants={fadeIn('left', 0.3)}
-            initial='hidden'
+            initial={{opacity: 0}}
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
           />
