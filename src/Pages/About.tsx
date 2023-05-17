@@ -1,20 +1,13 @@
-import CountUp from 'react-countup'
-import { useInView, motion, inView } from 'framer-motion'
-import { FaCircle, FaCheckCircle } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { useRef } from 'react'
 import { skillsList } from '../skillList'
 
 export default function About() {
   const aboutRef = useRef(null)
-  const isInView = useInView(aboutRef)
 
   return (
-    <section
-      ref={aboutRef}
-      id='about'
-      className='text-slate-300 '
-    >
+    <section ref={aboutRef} id='about' className='text-slate-300'>
       <div className='container mx-auto lg:h-screen flex justify-center items-center'>
         <div>
           <motion.div
