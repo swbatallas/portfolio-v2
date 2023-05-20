@@ -14,7 +14,6 @@ export default function Home() {
           className='flex-1 text-center lg:text-left items-center justify-center order-2 lg:order-1 lg:min-w-[50%]'
         >
           <motion.h2
-            // @ts-ignore
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView='show'
@@ -24,7 +23,6 @@ export default function Home() {
             Stewart Batallas
           </motion.h2>
           <motion.div
-            // @ts-ignore
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView='show'
@@ -40,7 +38,6 @@ export default function Home() {
             />
           </motion.div>
           <motion.p
-            // @ts-ignore
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView='show'
@@ -54,7 +51,6 @@ export default function Home() {
             React y NodeJS.
           </motion.p>
           <motion.div
-            // @ts-ignore
             variants={fadeIn('right', 0.3)}
             initial='hidden'
             whileInView='show'
@@ -74,10 +70,16 @@ export default function Home() {
               id='social-networks'
               className='flex text-[25px] lg:text-[40px] flex-row items-center mx-auto lg:mx-0 gap-x-6 max-w-max'
             >
-              <a href='#' className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'>
+              <a
+                href='#'
+                className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'
+              >
                 <FaGithub />
               </a>
-              <a href='#' className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'>
+              <a
+                href='#'
+                className='transition-all hover:-translate-y-2 hover:scale-125 duration-500'
+              >
                 <FaLinkedin />
               </a>
             </div>
@@ -92,9 +94,8 @@ export default function Home() {
             src={avatar}
             alt='avatar-image'
             className='hidden xs:block avatar relative mx-auto w-auto h-full'
-            // @ts-ignore
             variants={fadeIn('up', 0.3)}
-            initial={{opacity: 0}}
+            initial={{ opacity: 0 }}
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
           />
