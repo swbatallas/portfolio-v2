@@ -9,7 +9,6 @@ export default function About() {
         <div>
           <motion.div
             id='text'
-            //@ts-ignore
             variants={fadeIn('up', 0.3)}
             initial={{ opacity: 0 }}
             whileInView='show'
@@ -27,7 +26,6 @@ export default function About() {
           </motion.div>
           <div id='skills' className='flex flex-col'>
             <motion.h3
-              //@ts-ignore
               variants={fadeIn('up', 0.3)}
               initial={{ opacity: 0 }}
               whileInView='show'
@@ -47,7 +45,6 @@ export default function About() {
                   caracteristicas: string[]
                 }) => (
                   <motion.div
-                    // @ts-ignore
                     variants={fadeIn('right', 0.3, 0.5)}
                     initial='hidden'
                     whileInView='show'
