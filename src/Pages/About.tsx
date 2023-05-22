@@ -21,7 +21,15 @@ export default function About() {
             <p className='lg:text-[20px] md:text-[18px] text-slate-100'>
               Especializado en el MERN Stack, apuesto por un diseño responsive
               además de incorporar la mejor solución para un desarrollo
-              escalable.
+              escalable. También realizo trabajos como freelance a través del
+              proyecto{' '}
+              <a
+                href='https://www.tuwebpersonalizada.com'
+                target='blank'
+                className=' transition-all duration-200 text-red-500 hover:text-red-300 '
+              >
+                tuwebpersonalizada
+              </a>
             </p>
           </motion.div>
           <div id='skills' className='flex flex-col'>
