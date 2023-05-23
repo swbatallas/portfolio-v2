@@ -1,20 +1,29 @@
-import { ProjectObj } from "../vite-env"
+import { fadeIn } from "../variants";
+import { ProjectObj } from "../vite-env";
+import { motion } from "framer-motion";
 
-export default function ProjectComponent({name, description, link, image, colorAccent}: ProjectObj) {
-  console.log(colorAccent)
+export default function ProjectComponent({
+  name,
+  description,
+  link,
+  image,
+  colorAccent,
+}: ProjectObj) {
   return (
-    <div
+    <motion.div
+      variants={fadeIn("up", 0.3, 0.5)}
+      initial={{ opacity: 0 }}
+      whileInView="show"
+      viewport={{ once: false }}
       key={name}
-      className='group relative m-4 border-2 border-indigo-300/70 max-w-xl max-h-72 rounded-md overflow-hidden'
+      className="group relative m-4 border-2 border-indigo-300/70 max-w-xl max-h-72 rounded-md overflow-hidden"
     >
-      <div className='group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300 flex flex-col items-center justify-center'>
-        <div className='text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+      <div className="group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300 flex flex-col items-center justify-center">
+        <div className="text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <h3 className={`uppercase font-semibold text-${colorAccent}`}>
             {name}
           </h3>
-          <p className="mx-5 md:mx-20">
-            {description}
-          </p>
+          <p className="mx-5 md:mx-20">{description}</p>
           <a
             href={link}
             target="blank"
@@ -27,8 +36,8 @@ export default function ProjectComponent({name, description, link, image, colorA
       <img
         src={image}
         alt={`imagen del proyecto ${name}`}
-        className='object-cover group-hover:scale-125 transition-all duration-300'
+        className="object-cover group-hover:scale-125 transition-all duration-300"
       />
-    </div>
-  )
+    </motion.div>
+  );
 }
