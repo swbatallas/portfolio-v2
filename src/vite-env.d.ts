@@ -4,5 +4,6 @@ export type ProjectObj = {
   name: string
   description: string
   image?: string
-  link: string
+  link: string,
+  colorAccent: string
 }

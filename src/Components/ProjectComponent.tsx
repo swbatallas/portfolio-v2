@@ -1,25 +1,34 @@
+import { ProjectObj } from "../vite-env"
 
-export default function ProjectComponent({ proyecto }: any ) {
+export default function ProjectComponent({name, description, link, image, colorAccent}: ProjectObj) {
+  console.log(colorAccent)
   return (
     <div
-      key={proyecto.name}
-      className="group relative m-4 border-2 border-slate/50 max-w-2xl rounded-md overflow-hidden"
+      key={name}
+      className='group relative m-4 border-2 border-indigo-300/70 max-w-xl max-h-72 rounded-md overflow-hidden'
     >
-      <div className="group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300 flex items-center justify-center">
-        <a
-          href={proyecto.link}
-          className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-slate-300 uppercase font-extrabold"
-        >
-          ver detalles
-        </a>
+      <div className='group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300 flex flex-col items-center justify-center'>
+        <div className='text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
+          <h3 className={`uppercase font-semibold text-${colorAccent}`}>
+            {name}
+          </h3>
+          <p className="mx-5 md:mx-20">
+            {description}
+          </p>
+          <a
+            href={link}
+            target="blank"
+            className={`uppercase font-extrabold hover:text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-300/10 transition-all duration-500`}
+          >
+            ver detalles
+          </a>
+        </div>
       </div>
       <img
-        src={proyecto.image}
-        alt={`imagen del proyecto ${proyecto.name}`}
-        className="group-hover:scale-125 transition-all duration-300"
+        src={image}
+        alt={`imagen del proyecto ${name}`}
+        className='object-cover group-hover:scale-125 transition-all duration-300'
       />
-      <h3 className="uppercase">{proyecto.name}</h3>
-      <p>{proyecto.description}</p>
     </div>
-  );
+  )
 }
