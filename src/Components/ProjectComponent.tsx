@@ -1,6 +1,5 @@
-import { ProjectObj } from "../vite-env";
 
-export default function ProjectComponent({ proyecto }: ProjectObj ) {
+export default function ProjectComponent({ proyecto }: any ) {
   return (
     <div
       key={proyecto.name}
