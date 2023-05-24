@@ -5,7 +5,7 @@ import { skillsList } from '../skillList'
 export default function About() {
   return (
     <section id='about' className='text-slate-300'>
-      <div className='container mx-auto lg:h-screen flex justify-center items-center'>
+      <div className='container mx-auto lg:h-screen flex justify-center items-center min-h-screen py-20'>
         <div>
           <motion.div
             id='text'

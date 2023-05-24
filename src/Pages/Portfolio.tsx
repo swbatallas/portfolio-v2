@@ -12,10 +12,10 @@ export default function Portfolio() {
         initial={{ opacity: 0 }}
         whileInView="show"
         viewport={{ once: false, amount: 0.2 }}
-        className="text-slate-300 text-center flex flex-col justify-center items-center"
+        className="text-slate-300 text-center flex flex-col justify-center items-center min-h-screen lg:min-h-0"
       >
         <div id="portfolio-text" className="text-slate-300 mx-auto">
-          <h2 className="uppercase font-bold text-[30px] lg:text-[50px]">
+          <h2 className="uppercase font-bold text-[30px] lg:text-[50px] lg:text-left">
             Portfolio
           </h2>
           <p className="lg:text-[20px] md:text-[18px] text-slate-100">
