@@ -3,16 +3,24 @@ export const projectList: ProjectObj[] = [
   {
     name: 'unio',
     description:
-      'enciclopedia interactiva con base de datos propia basada en la API de Marvel',
+      'enciclopedia interactiva de personajes de Marvel',
     image: '/unio.png',
-    link: 'https://unio.herokuapp.com/',
+    link: '#',
     colorAccent: 'red-500',
   },
   {
     name: 'venderavon',
-    description: 'pagina web destinada a la contratación de vendedoras avon',
+    description: 'El lugar de las asesoras de belleza de Avon',
     image: '/venderavon.png',
     link: 'https://venderavon.es/',
     colorAccent: 'violet-500',
+  },
+  {
+    name: 'fraggen',
+    description:
+      'Trivial con tiempo límite y categorías',
+    image: '/fraggen.png',
+    link: '#',
+    colorAccent: 'blue-500',
   },
 ]

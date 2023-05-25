@@ -5,15 +5,14 @@ import { skillsList } from '../skillList'
 export default function About() {
   return (
     <section id='about' className='text-slate-300'>
-      <div className='container mx-auto lg:h-screen flex justify-center items-center min-h-screen py-20'>
-        <div>
+      <div className='container mx-auto lg:h-screen flex flex-col justify-center min-h-screen'>
           <motion.div
-            id='text'
+            id='about-text'
             variants={fadeIn('up', 0.3)}
             initial={{ opacity: 0 }}
             whileInView='show'
             viewport={{ once: false, amount: 0.7 }}
-            className='text-center lg:text-left'
+            className='text-center lg:text-left md:ml-5'
           >
             <h2 className='uppercase font-bold text-[30px] lg:text-[50px]'>
               Sobre mi
@@ -44,7 +43,7 @@ export default function About() {
             </motion.h3>
             <div
               id='skills-container'
-              className='lg:grid lg:grid-cols-2 md:mb-8'
+              className='lg:grid lg:grid-cols-2'
             >
               {skillsList.map(
                 (skill: {
@@ -79,7 +78,6 @@ export default function About() {
               )}
             </div>
           </div>
-        </div>
       </div>
     </section>
   )
