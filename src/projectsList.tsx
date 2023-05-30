@@ -1,4 +1,4 @@
-import { ProjectObj } from './vite-env'
+import type { ProjectObj } from './vite-env'
 export const projectList: ProjectObj[] = [
   {
     name: 'unio',

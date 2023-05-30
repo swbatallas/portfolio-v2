@@ -2,34 +2,34 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import { FaArrowAltCircleDown, FaArrowAltCircleRight } from 'react-icons/fa'
 import { MutableRefObject, useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import { sendForm } from '@emailjs/browser'
 
 export default function Contact() {
-  const contactForm = useRef<HTMLFormElement>(null) as MutableRefObject<HTMLFormElement>
+  const contactForm = useRef<HTMLFormElement>(
+    null
+  ) as MutableRefObject<HTMLFormElement>
 
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     console.log(event.currentTarget + 'form')
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICEID,
-        import.meta.env.VITE_EMAILJS_TEMPLATEID,
-        contactForm.current,
-        import.meta.env.VITE_EMAILJS_PUBLICKEY
-      )
-      .then(
-        result => {
-          console.log(result.text)
-          if (contactForm.current != null) {
-            contactForm.current.reset()
-            window.alert('Su mensaje ha sido enviado correctamente')
-          }
-        },
-        error => {
-          console.log(error.text)
-          window.alert('el mensaje no se ha enviado, error ' + error.text)
+    sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICEID,
+      import.meta.env.VITE_EMAILJS_TEMPLATEID,
+      contactForm.current,
+      import.meta.env.VITE_EMAILJS_PUBLICKEY
+    ).then(
+      result => {
+        console.log(result.text)
+        if (contactForm.current != null) {
+          contactForm.current.reset()
+          window.alert('Su mensaje ha sido enviado correctamente')
         }
-      )
+      },
+      error => {
+        console.log(error.text)
+        window.alert('el mensaje no se ha enviado, error ' + error.text)
+      }
+    )
   }
 
   return (

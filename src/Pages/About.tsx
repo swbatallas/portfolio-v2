@@ -61,6 +61,7 @@ export default function About() {
                   >
                     <img
                       src={skill.badge}
+                      alt={skill.name}
                       className='rounded-full transition-all hover:scale-150 hover:-translate-y-6 my-3 w-36 shadow-md hover:shadow-lg'
                     />
                     <ul className='my-2'>

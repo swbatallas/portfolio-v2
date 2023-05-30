@@ -1,5 +1,5 @@
 import { fadeIn } from '../variants'
-import { ProjectObj } from '../vite-env'
+import type { ProjectObj } from '../vite-env'
 import { motion } from 'framer-motion'
 
 export default function ProjectComponent({

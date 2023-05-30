@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import ProjectComponent from '../Components/ProjectComponent'
 import { projectList } from '../projectsList'
-import { ProjectObj } from '../vite-env'
+import type { ProjectObj } from '../vite-env'
 
 export default function Portfolio() {
   return (
@@ -28,6 +28,7 @@ export default function Portfolio() {
           {projectList.map((proyecto: ProjectObj) => {
             return (
               <ProjectComponent
+              key={proyecto.name}
                 name={proyecto.name}
                 description={proyecto.description}
                 link={proyecto.link}
