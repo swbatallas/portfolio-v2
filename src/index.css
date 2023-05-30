@@ -1,0 +1,30 @@
+/* tailwindCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Palanquin', sans-serif;
+font-family: 'Taviraj', serif;
+*/
+
+#root {
+    background-image: radial-gradient(circle, #172554, #17234a, #172140, #171e36, #171c2c);
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Palanquin', sans-serif;
+}
+
+p {
+    font-family: 'Taviraj', serif;
+}
