@@ -6,8 +6,7 @@ export default function ProjectComponent({
   name,
   description,
   link,
-  image,
-  colorAccent,
+  image
 }: ProjectObj) {
   return (
     <motion.div
