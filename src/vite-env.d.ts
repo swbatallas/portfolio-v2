@@ -7,3 +7,9 @@ export type ProjectObj = {
   link: string,
   colorAccent: string
 }
+
+interface ImportMetaEnv {
+  VITE_EMAILJS_SERVICEID: string
+  VITE_EMAILJS_TEMPLATEID: string
+  VITE_EMAILJS_PUBLICKEY: string
+}

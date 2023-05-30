@@ -33,7 +33,7 @@ export default function About() {
           </motion.div>
           <div id='skills' className='flex flex-col'>
             <motion.h3
-              variants={fadeIn('up', 0.3)}
+              variants={fadeIn('up', 0.3, 0.5)}
               initial={{ opacity: 0 }}
               whileInView='show'
               viewport={{ once: false, amount: 0.7 }}
