@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
 import Shapes from '../Components/Shapes'
+import { Link } from 'react-scroll'
 
 export default function Home() {
   return (
@@ -58,16 +59,27 @@ export default function Home() {
             id='buttons'
             className='flex max-w-max gap-x-6 items-center mt-5 md:mt-8 mx-auto'
           >
-            <a href='#contact'>
+            <Link
+              to='contact'
+              smooth={true}
+              duration={500}
+              className='capitalize cursor-pointer'
+            >
               <button className='w-[120px] transition-colors bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full hover:bg-indigo-600 duration-500'>
                 Contactar
               </button>
-            </a>
-            <a href='#portfolio'>
+            </Link>
+            <Link
+              to='portfolio'
+              smooth={true}
+              duration={500}
+              offset={-160}
+              className='capitalize cursor-pointer'
+            >
               <button className='w-[120px] transition-colors bg-indigo-800 font-bold py-2 px-4 md:my-1 rounded-full hover:bg-indigo-600 duration-500'>
                 Portfolio
               </button>
-            </a>
+            </Link>
             <div
               id='social-networks'
               className='flex text-[25px] lg:text-[40px] flex-row items-center mx-auto lg:mx-0 gap-x-6 max-w-max'

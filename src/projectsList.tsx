@@ -5,7 +5,7 @@ export const projectList: ProjectObj[] = [
     description:
       'enciclopedia interactiva de personajes de Marvel',
     image: '/unio.png',
-    link: '#',
+    link: '/unio',
     colorAccent: 'red-500',
   },
   {

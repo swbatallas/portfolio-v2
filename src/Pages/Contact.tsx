@@ -34,7 +34,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='text-slate-300'>
-      <div className='container mx-auto h-screen flex flex-col lg:flex-row lg:justify-between'>
+      <div className='container mx-auto h-screen flex flex-col justify-center lg:flex-row lg:justify-between lg:items-center'>
         <motion.div
           id='about-text'
           variants={fadeIn('up', 0.3, 0.5)}

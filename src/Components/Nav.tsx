@@ -47,6 +47,7 @@ export default function Nav() {
               to={navElement.link}
               smooth={true}
               duration={500}
+              offset={-80}
               key={navElement.title}
               className='capitalize cursor-pointer'
             >
@@ -67,6 +68,7 @@ export default function Nav() {
               to={navElement.link}
               smooth={true}
               duration={500}
+              offset={-80}
               key={navElement.title}
               className='capitalize cursor-pointer'
             >
