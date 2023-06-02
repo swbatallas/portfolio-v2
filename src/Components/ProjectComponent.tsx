@@ -1,13 +1,16 @@
 import { fadeIn } from '../variants'
 import type { ProjectObj } from '../vite-env'
 import { motion } from 'framer-motion'
+import { useNavigateToTop } from '../customHooks/useNavigateToTop'
 
 export default function ProjectComponent({
   name,
   description,
   link,
-  image
+  image,
 }: ProjectObj) {
+  const navigateAndReset = useNavigateToTop()
+
   return (
     <motion.div
       variants={fadeIn('up', 0.3, 0.5)}
@@ -21,13 +24,12 @@ export default function ProjectComponent({
         <div className='text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500'>
           <h3 className='uppercase font-extrabold'>{name}</h3>
           <p className='mx-5 md:mx-20'>{description}</p>
-          <a
-            href={link}
-            target='blank'
+          <button
+            onClick={() => navigateAndReset(link)}
             className='uppercase font-extrabold hover:text-transparent bg-clip-text bg-gradient-to-r from-slate-300 to-slate-100/40 transition-all duration-500'
           >
             ver detalles
-          </a>
+          </button>
         </div>
       </div>
       <img

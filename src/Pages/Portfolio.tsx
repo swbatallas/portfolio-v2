@@ -5,6 +5,8 @@ import { projectList } from '../projectsList'
 import type { ProjectObj } from '../vite-env'
 
 export default function Portfolio() {
+
+  
   return (
     <section id='portfolio' className='text-slate-300 py-20 md:py-0'>
       <div className='container mx-auto h-screen flex flex-col justify-center'>

@@ -1,7 +1,9 @@
+import Header from '../Components/Header'
 function Unio() {
   return (
-    <section className='text-slate-300'>
-      <div id='unio-presentation' className='pt-20 mx-1'>
+    <section>
+      <Header />
+      <div id='unio-presentation' className='pt-20 mx-1 text-slate-300'>
         <h1 className='uppercase font-extrabold text-[40px] lg:text-[50px] text-red-600'>
           unio app
         </h1>
@@ -17,7 +19,10 @@ function Unio() {
         alt='pantalla de home de unio'
         className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20'
       />
-      <div id='unio-sign' className='mt-10 bg-black text-slate-100 flex flex-col justify-center'>
+      <div
+        id='unio-sign'
+        className='mt-10 bg-black text-slate-100 flex flex-col justify-center'
+      >
         <div id='unio-sign'>
           <h1 className='font-extrabold text-[40px] ml-3 mr-12 pt-10'>
             Inicia sesion o sé un visitante anónimo
@@ -72,7 +77,10 @@ function Unio() {
             className='rounded-[1rem] w-80 mx-auto h-auto border-4 mt-10 border-red-300/20'
           />
         </div>
-        <button className='bg-red-500 rounded-lg py-2 px-5 text-center font-bold mx-auto my-5' disabled={true}>
+        <button
+          className='bg-red-500 rounded-lg py-2 px-5 text-center font-bold mx-auto my-5'
+          disabled={true}
+        >
           Acceso deshabilitado temporalmente
         </button>
       </div>
