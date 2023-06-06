@@ -28,7 +28,7 @@ function Unio() {
         viewport={{ once: false, amount: 0.3 }}
         className='text-slate-300 flex flex-col lg:flex-row lg:justify-center lg:items-center'
       >
-        <h2 className='text-[20px] pt-10 lg:text-[28px] lg:text-center lg:pt-0 lg:mt-[-15rem] lg:mx-28 lg:w-[30%]'>
+        <h2 className='text-[20px] pt-10 lg:text-[28px] lg:text-center lg:pt-0 lg:mt-[-15rem] lg:mx-28 lg:w-[30%] ml-1'>
           Conoce a los personajes de la compañia de comics mas famosa.
         </h2>
         <img

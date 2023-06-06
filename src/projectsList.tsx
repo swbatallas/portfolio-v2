@@ -20,7 +20,7 @@ export const projectList: ProjectObj[] = [
     description:
       'Trivial con tiempo límite y categorías',
     image: '/fraggen.png',
-    link: '#',
+    link: '/fraggen',
     colorAccent: 'blue-500',
   },
 ]

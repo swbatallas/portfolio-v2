@@ -5,6 +5,7 @@ import App from './App.tsx'
 import Unio from './Pages/Unio.tsx'
 import './index.css'
 import Error from './Pages/Error.tsx'
+import Fraggen from './Pages/Fraggen.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/fraggen',
+    element: <Fraggen />,
   },
   {
     path: '/venderavon',
