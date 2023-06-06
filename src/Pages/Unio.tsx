@@ -1,17 +1,33 @@
 import Header from '../Components/Header'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
+
 function Unio() {
   return (
     <section>
       <Header />
-      <div id='unio-presentation' className='pt-20 lg:pt-10 mx-3'>
+      <motion.div
+        variants={fadeIn('down', 0.3, 0.5)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.3 }}
+        id='unio-presentation'
+        className='pt-20 lg:pt-10 mx-3'
+      >
         <h1 className='uppercase font-extrabold text-[40px] lg:text-[50px] text-red-600'>
           unio app
         </h1>
         <h2 className='font-bold text-[34px] text-slate-300/70'>
           La enciclopedia interactiva sobre los personajes de Marvel.
         </h2>
-      </div>
-      <div className='text-slate-300 flex flex-col lg:flex-row lg:justify-center lg:items-center'>
+      </motion.div>
+      <motion.div
+        variants={fadeIn('up', 0.3, 0.5)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: false, amount: 0.3 }}
+        className='text-slate-300 flex flex-col lg:flex-row lg:justify-center lg:items-center'
+      >
         <h2 className='text-[20px] pt-10 lg:text-[28px] lg:text-center lg:pt-0 lg:mt-[-15rem] lg:mx-28 lg:w-[30%]'>
           Conoce a los personajes de la compañia de comics mas famosa.
         </h2>
@@ -20,9 +36,13 @@ function Unio() {
           alt='pantalla de home de unio'
           className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20 lg:max-h-[75vh] lg:w-auto'
         />
-      </div>
+      </motion.div>
       <div className='mt-10 bg-black text-slate-100 flex flex-col'>
-        <div
+        <motion.div
+          variants={fadeIn('up', 0.4, 0.8)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.5 }}
           id='unio-sign'
           className='min-h-screen flex flex-col lg:flex-row lg:justify-center lg:items-center'
         >
@@ -40,8 +60,12 @@ function Unio() {
             alt='pantalla de inicio de sesion de unio'
             className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20 lg:max-h-[75vh] lg:w-auto'
           />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={fadeIn('up', 0.4, 0.8)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.5 }}
           id='unio-characters'
           className='min-h-screen flex flex-col lg:flex-row lg:justify-center lg:items-center'
         >
@@ -58,8 +82,12 @@ function Unio() {
             alt='pantalla de personaje de unio'
             className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20 lg:max-h-[75vh] lg:w-auto'
           />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={fadeIn('up', 0.4, 0.8)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.5 }}
           id='unio-ranking'
           className='min-h-screen flex flex-col lg:flex-row lg:justify-center lg:items-center'
         >
@@ -77,8 +105,12 @@ function Unio() {
             alt='pantalla de personaje de unio'
             className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20 lg:max-h-[75vh] lg:w-auto'
           />
-        </div>
-        <div
+        </motion.div>
+        <motion.div
+          variants={fadeIn('up', 0.4, 0.8)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.5 }}
           id='unio-settings'
           className='min-h-screen flex flex-col lg:flex-row lg:justify-center lg:items-center'
         >
@@ -95,7 +127,7 @@ function Unio() {
             alt='pantalla de personaje de unio'
             className='rounded-[1rem] w-80 mx-auto border-4 mt-10 border-red-300/20 lg:max-h-[75vh] lg:w-auto'
           />
-        </div>
+        </motion.div>
         <button
           className='bg-red-500 rounded-lg py-2 px-5 text-center font-bold mx-auto my-5'
           disabled={true}
